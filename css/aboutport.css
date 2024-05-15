@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(180deg,rgb(0,132,86),white);
+}
+#headerVid{
+    display: none;
+}
+#founderheading{
+    padding-bottom: 0.1vw;
+}
+#containerinfo{
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+#containerheader{
+    width: 100%;
+    height: 25vh;
+    
+    background-size: 100% 100%;
+    background-image: url(/asset/image/portPic.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px black;
+}
+
+#containerfounder{
+    height: 70vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#containerimage{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+#containerinfo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.foundername{
+    font-size: 5vw;
+}
+#paragraph{
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+    font-size: 2.2vw;
+    font-weight: 400;
+    word-spacing: 0.1vw;
+}
+.pagename{
+    position: absolute;
+    z-index: 2;
+    font-size: 7vw;
+    letter-spacing: 3.5vw;
+    font-family: "Jersey 10", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+#locationadd{
+    font-size: 2.2vw;
+    letter-spacing: 0.3vw;
+}

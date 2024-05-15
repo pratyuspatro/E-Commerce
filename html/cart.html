@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="icon" type="image/x-icon" href="/asset/image/logo.png">
+
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav>
+        <ul class="mainlist1">
+            <li class="li1"><a href="/html/home.html">Home</a></li>
+            <li class="li1"><a href="/html/About.html">About</a></li>
+            <li class="li1"><a href="/html/cart.html">Cart</a>
+                <ul class="sublist">
+                    <li class="li2">1</li>
+                </ul>
+            </li>    
+        </ul>
+
+        <ul class="mainlist2">
+            <li class="li3"><a href="/index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="cartContainer">
+        <div class="cartImageContainer">
+            <img class="cartImage" src="/asset/image/samsung.png" alt="">
+        </div>
+        <div class="cartInfoContainer">
+
+            <div class="productName">
+                <span class="pName">Samsung S24Ulta</span>
+                <div class="pNamesec2">
+                <div class="incDec">
+                    <input class="inps" type="button" value="-">
+                    <input class="inps" value="1" readonly>
+                    <input class="inps" type="button" value="+">
+                </div>
+                <i class="fa-solid fa-trash fa-beat"></i>
+                </div>
+            </div>
+
+            <div class="productDetails">
+                <h1 class="pdel">Varient:<span>256GB</span></h1>
+                <h1 class="pdel"> Original Price: <span>1,45,000</span></h1>
+                <h1 class="pdel"> Discounted Price: <span>1,25,000</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartContainer">
+        <div class="cartImageContainer">
+            <img class="cartImage" src="/asset/image/iphone.png" alt="">
+        </div>
+        <div class="cartInfoContainer">
+
+            <div class="productName">
+                <span class="pName">Iphone 15Pro Max</span>
+                <div class="pNamesec2">
+                <div class="incDec">
+                    <input class="inps" type="button" value="-">
+                    <input class="inps" value="1" readonly>
+                    <input class="inps" type="button" value="+">
+                </div>
+                <i class="fa-solid fa-trash fa-beat"></i>
+                </div>
+            </div>
+
+            <div class="productDetails">
+                <h1 class="pdel">Varient:<span>256GB</span></h1>
+                <h1 class="pdel"> Original Price: <span>1,60,000</span></h1>
+                <h1 class="pdel"> Discounted Price: <span>1,50,000</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="couponCode">
+        Coupon Code:
+        <input id="couponcodeinp" placeholder="Coupon Code" type="text" minlength="6" maxlength="6">
+    </div>
+
+    <div id="checkoutConatiner">
+        <div id="checkoutInfo">
+            <h1 class="checkOutText">No of Products: <span class="impNumber">2</span></h1>
+            <h1 class="checkOutText">Total Cost: <span class="impNumber">2,75,000</span>Rs</h1>
+        </div>
+        <input type="button" value="Pay" class="payButton">
+    </div>
+
+    <footer>
+        <ul class="footerList">
+          <li class="fli">
+            <a href="https://www.linkedin.com/in/pratyus-patro-643484196/" class="fli">
+              <i class="fa-brands fa-linkedin"></i>
+              Linkedin
+            </a>
+          </li>  
+          <li class="fli">
+            <a href="https://www.instagram.com/i.am.pratyus/?next=%2F" class="fli">
+              <i class="fa-brands fa-instagram"></i>
+              Instagram
+            </a>
+          </li>
+          <li class="fli">
+            <a href="https://twitter.com/pratyuspatro" class="fli">
+              <i class="fa-brands fa-x-twitter"></i>
+                Twitter
+            </a>
+          </li>
+        </ul>
+        <span class="copy">
+          <i class="fa-solid fa-copyright"></i>
+          Copyright belongs to TeckPocketHub
+        </span>
+      </footer>
+
+      <a href="#">
+        <div id="top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div></a>
+</body>
+</html>

@@ -1,0 +1,255 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    font-size: 12vw;
+    color: rgb(240, 87, 87);
+    letter-spacing: 1vw;
+    position: absolute;
+    z-index: 8;
+    margin-bottom: 15%;
+    top: 3%;
+    text-shadow: 0.1vw 0.1vw 0.1vw black;
+}
+
+#mainContainer {
+    width: 80vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.296);
+    border-radius: 1vw;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0.1vw 0.1vw 0.2vw black;
+}
+
+#loginContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    z-index: 5;
+}
+
+#dsiplayContainer {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    border-radius: 8px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    right: 0px;
+    overflow: hidden;
+    background-image: linear-gradient(to right top, #305170, #007da2, #00abb6, #00d6a1, #6dfc6b);
+}
+
+#iphone{
+    height: 70%;
+    width: 70%;
+}
+
+#img1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: slide1 6s infinite ease-in-out;
+}
+
+@keyframes slide1 {
+    0% {
+        transform: translateX(190%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-170%);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(170%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-210%);
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        transform: translateX(70%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-170%);
+    }
+}
+
+#samsung{
+    height: 65%;
+    width: 65%;
+}
+
+#img2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: slide2 6s both infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+#pixel{
+    height: 65%;
+    width: 65%;
+}
+
+#img3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: slide2 6s both infinite ease-in-out;
+    animation-delay: 4s;
+}
+
+#loginHeading{
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.2vw;
+        font-weight: 500;
+        font-size: 5vw;
+        color: wheat;
+}
+
+#passVisClose{
+    width: 3.5vw;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#passVisOpen{
+    display: none;
+}
+#email, #passContainer{
+    width: 65%;
+    height: 6vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.1vw solid whitesmoke;
+    border-radius: 5px;
+    letter-spacing: 0.2vw;
+    font-size: 1vw;
+    box-shadow: 0px 3px 1px black;
+}
+#email::placeholder,#pass::placeholder{
+    color: white;
+    letter-spacing: 0.4vw;
+    font-size: 3vw;
+}
+#pass{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 3vh;
+    text-decoration: none;
+    color: #555555;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #555555;
+    transition: 0.3s;
+    box-shadow: 0px 6px 0px -2px rgba(67, 145, 209, 1);
+    background-color: #7fc1f7;
+    letter-spacing: 0.2vw;
+    font-size: 2.5vw;
+    font-weight: 800;
+    text-shadow: 0.1px 0.1px 0.1px black;
+    color: white;
+
+}
+#login:hover{
+    box-shadow: 0 0 #fff;
+    transform: translateY(1px);
+    background-color: royalblue;
+    color: lightblue;
+}
+a{   
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.2vw;
+    font-size: 3vw;
+    transition: 0.3s;
+    font-weight: 800;
+    text-shadow: 0.2px 0.2px 0.2px black; 
+}
+a:hover{
+    color: lightseagreen;
+    text-shadow: none;
+}
+
+/* Media query for portrait orientation */
+@media screen and (orientation: portrait) {
+    #mainContainer {
+        flex-direction: column; /* Change to column for portrait layout */
+    }
+
+    #loginContainer {
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+
+    #dsiplayContainer {
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+}

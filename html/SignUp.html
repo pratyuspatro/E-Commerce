@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/SignUp.css">
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="/css/SignUpPort.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="icon" type="image/x-icon" href="/asset/image/logo.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="logo">TeckPocketHub</h1>
+    <div id="mainContainer">
+
+        <div id="vidContainer">
+            <video id="video" src="/asset/video/videoplayback.mp4" autoplay muted loop></video>
+        </div>
+
+        <div id="RegisterContainer">
+
+            <h2 id="loginHeading">Create Account</h2>
+            <div id="name">
+                <input id="firstname" type="text" placeholder="First Name">
+                <input id="lastname" type="text" placeholder="Last Name">
+            </div>
+            <input id="email" type="email" placeholder="Enter the Email">
+            <input id="password" type="password" placeholder="Enter your Password">
+            <input id="number" type="number" placeholder="Enter Phone Number">
+            <textarea id="address" placeholder="Address"></textarea>
+            <input id="landmark" type="text" placeholder="Enter the Nearest Landmark">
+            <input id="pin" type="number" placeholder="PIN">
+            <p id="cityChoose">Choose the City</p>
+            
+            <select id="city">
+                <option id="opt">--City Names--</option>
+                <optgroup label="TS">
+                    <option class="op1">Hyderbad</option>
+                    <option>Warangal</option>
+                    <option>KArimnagar</option>
+                </optgroup>
+                <optgroup label="AP">
+                    <option>Guntur</option>
+                    <option>Kurnool</option>
+                    <option>Vijaywada</option>
+                </optgroup>
+                <optgroup label="OD">
+                    <option>Bhubaneswar</option>
+                    <option>Berhampur</option>
+                    <option>Cuttack</option>
+                </optgroup>
+                <optgroup label="RJ">
+                    <option>Jaipur</option>
+                </optgroup>
+            </select>
+            <a id="signupAnchor" href="/index.html"><input type="button" id="signup" value="SignUp"></a>
+        </div>
+    </div>
+    <a id="already" href="/index.html"> <span id="alreadyText">Alreay have an Account</span></a>
+</body>
+</html>
